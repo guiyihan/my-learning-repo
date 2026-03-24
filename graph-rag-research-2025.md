@@ -51,13 +51,12 @@
 
 ## 📚 arXiv 论文趋势
 
-根据 arXiv 搜索结果，**"Graph RAG"** 主题相关论文已达 **711 篇**，涵盖：
+根据 arXiv 搜索结果：
 
-- 基于图的索引优化
-- 近似最近邻搜索（ANN）
-- 知识图谱构建
-- 多模态 RAG
-- Agent 记忆机制
+| 主题 | 论文数量 |
+|------|----------|
+| Graph RAG | **711 篇** |
+| RAG + LLM + Agent | **616 篇** |
 
 ### 最新论文方向（2024-2025）
 
@@ -68,6 +67,58 @@
 2. **Agent 记忆增强**
    - 长期记忆 + 短期记忆结合
    - 图结构存储对话历史
+
+---
+
+## 🛠️ RAG 最新技术进展
+
+### 1. 🔍 Advanced RAG 技术
+
+| 技术 | 描述 |
+|------|------|
+| **Query Rewriting** | 使用 LLM 改写查询，提高检索精度 |
+| **HyDE (Hypothetical Document Embeddings)** | 生成假设文档来辅助检索 |
+| **Self-RAG** | 自主判断是否需要检索 |
+| **Corrective RAG** | 纠正检索结果中的错误 |
+
+### 2. 🖼️ Multi-modal RAG（多模态 RAG）
+
+- **图像检索**: CLIP、BLIP 等模型
+- **视频检索**: 时间轴理解
+- **音频检索**: 语音转文本 + 音频embedding
+- **表格检索**: 表格结构理解
+
+### 3. 🔗 Agent + RAG 融合模式
+
+```
+┌─────────────────────────────────────────┐
+│              Agent                      │
+│  ┌─────────┐  ┌─────────┐  ┌─────────┐ │
+│  │ Planning│  │ Memory  │  │ Tools   │ │
+│  └────┬────┘  └────┬────┘  └────┬────┘ │
+│       │            │            │       │
+│       └────────────┼────────────┘       │
+│                    │                    │
+│              ┌─────▼─────┐              │
+│              │    RAG    │              │
+│              └───────────┘              │
+└─────────────────────────────────────────┘
+```
+
+**Agent 调用 RAG 的场景：**
+- **Tool Use**: Agent 调用 RAG 工具获取知识
+- **Memory**: 图结构作为 Agent 记忆
+- **Planning**: RAG 辅助任务规划
+- **Reflection**: 检索历史经验
+
+### 4. 📊 RAG 评估框架
+
+| 框架 | 描述 |
+|------|------|
+| **RAGAS** | RAG 自动化评估指标 |
+| **ARES** | 自动评估 RAG 系统 |
+| **BLEU/ROUGE** | 传统文本相似度 |
+| **Faithfulness** | 答案可信度评估 |
 
 ---
 
@@ -88,6 +139,15 @@
 - **Workflows**: Agent 工作流编排
 - **Event-Driven**: 事件驱动架构
 
+### 其他值得关注的项目
+
+| 项目 | Stars | 特点 |
+|------|-------|------|
+| **RAGFlow** | 13k+ | 深度文档理解 RAG |
+| **Quivr** | 12k+ | 第二大脑个人知识库 |
+| **AnythingLLM** | 25k+ | 全栈 RAG 平台 |
+| **FastGPT** | 15k+ | 知识库问答平台 |
+
 ---
 
 ## 🔬 技术趋势分析
@@ -106,12 +166,13 @@
    - 跨文档关联
    - 摘要式检索
 
-### Agent + RAG 结合点
+### 2025 年 RAG 发展方向
 
-1. **Tool Use**: Agent 调用 RAG 工具获取知识
-2. **Memory**: 图结构作为 Agent 记忆
-3. **Planning**: RAG 辅助任务规划
-4. **Reflection**: 检索历史经验
+1. **Agentic RAG** - RAG 系统具备自主决策能力
+2. **Native RAG** - LLM 原生支持检索
+3. **Graph RAG** - 图结构深度整合
+4. **Multi-modal RAG** - 多模态统一理解
+5. **Self-improving RAG** - 自主学习和优化
 
 ---
 
@@ -127,6 +188,7 @@
 
 1. arXiv 最新论文（搜索 "Graph RAG", "Agent Memory", "Knowledge Graph LLM"）
 2. GitHub Trending: graphrag, rag, agent
+3. RAG 论文合集: https://github.com/ChinaCh/RAG-Survey
 
 ---
 
@@ -137,7 +199,8 @@ Graph RAG 正在成为 AI Agent 开发的热门方向：
 - **Microsoft GraphRAG** 引领开源社区，31.7k stars 说明其热度
 - **Agent + RAG 融合** 是趋势：Agent 调用 RAG 工具，图结构作为记忆
 - **工具生态**（LangChain/LlamaIndex）持续完善对 Agent 的支持
-- **学术研究活跃**，711 篇论文覆盖多个子方向
+- **学术研究活跃**，711+ 篇论文覆盖多个子方向
+- **多模态 RAG** 和 **Agentic RAG** 是新兴热点
 
 ---
 
